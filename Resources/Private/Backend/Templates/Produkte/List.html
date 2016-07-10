@@ -16,13 +16,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <h1>Listing for Produkte</h1>
 
 <f:flashMessages />
-    
-    <f:for each="{produktes}" as="produkte">
-        {produkte.farbe.ral}<br/>
-    </f:for>
-    
-    {f:if(condition: i.isFirst, then: '{x.farbe.ral}') -> f:for(each:'{produktes}', as: 'x', iteration: 'i')}
-<br /><br /><br />
+
 <table  class="tx_msrproducts" style="width:50%;">
 	<tr>
 		<th>Produkt</th>
@@ -41,8 +35,5 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="delete" arguments="{produkte : produkte}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
-</table>
-<f:be.infobox title="Message title">Knaller</f:be.infobox>
-    <f:be.tableList tableName="tx_msrproducts_domain_model_produkte" fieldList="{0: 'produkt', 1: 'farbe'}" />
-<f:link.action action="new">New Produkte</f:link.action>
+</table> 
 </f:section>
