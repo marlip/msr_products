@@ -1,0 +1,45 @@
+
+plugin.tx_msrproducts_produkte {
+	view {
+		# cat=plugin.tx_msrproducts_produkte/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:msr_products/Resources/Private/Templates/
+		# cat=plugin.tx_msrproducts_produkte/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:msr_products/Resources/Private/Partials/
+		# cat=plugin.tx_msrproducts_produkte/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:msr_products/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_msrproducts_produkte//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+plugin.tx_msrproducts_produkt {
+	view {
+		# cat=plugin.tx_msrproducts_produkt/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:msr_products/Resources/Private/Templates/
+		# cat=plugin.tx_msrproducts_produkt/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:msr_products/Resources/Private/Partials/
+		# cat=plugin.tx_msrproducts_produkt/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:msr_products/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_msrproducts_produkt//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+module.tx_msrproducts_produktverwaltung {
+	view {
+		# cat=module.tx_msrproducts_produktverwaltung/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:msr_products/Resources/Private/Backend/Templates/
+		# cat=module.tx_msrproducts_produktverwaltung/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:msr_products/Resources/Private/Backend/Partials/
+		# cat=module.tx_msrproducts_produktverwaltung/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:msr_products/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_msrproducts_produktverwaltung//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
