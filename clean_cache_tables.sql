@@ -1,3 +1,5 @@
+use typo3;
+
 TRUNCATE TABLE cache_md5params;
 TRUNCATE TABLE cache_treelist;
 TRUNCATE TABLE cf_cache_hash;
