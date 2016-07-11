@@ -12,28 +12,26 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
-<f:section name="content">
+<f:section name="main">
 <h1>Listing for Produkte</h1>
 
 <f:flashMessages />
 
-<table  class="tx_msrproducts" style="width:50%;">
+<table  class="tx_msrproducts" >
 	<tr>
-		<th>Produkt</th>
-		<th>Farbe</th>
 		<th><f:translate key="tx_msrproducts_domain_model_produkte.preis" /></th>
-		<th style="width: 50px;text-align: center;"> </th>
-		<th style="width: 50px;text-align: center;"> </th>
+		<th> </th>
+		<th> </th>
 	</tr>
 
 	<f:for each="{produktes}" as="produkte">
-		<tr style="background-color:#{produkte.farbe.hex}">
-			<td><f:link.action action="show" arguments="{produkte : produkte}"> {produkte.produkt.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{produkte : produkte}"> {produkte.farbe.ral}</f:link.action></td>
+		<tr>
 			<td><f:link.action action="show" arguments="{produkte : produkte}"> {produkte.preis}</f:link.action></td>
 			<td><f:link.action action="edit" arguments="{produkte : produkte}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{produkte : produkte}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
 </table>
+
+<f:link.action action="new">New Produkte</f:link.action>
 </f:section>
